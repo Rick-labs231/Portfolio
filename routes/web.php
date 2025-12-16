@@ -6,16 +6,6 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\MessageController;
 
-use Illuminate\Support\Facades\Artisan;
-
-Route::get('/migrate', function () {
-    try {
-        Artisan::call('migrate', ['--force' => true]);
-        return "Migration completed!";
-    } catch (\Exception $e) {
-        return "Migration failed: " . $e->getMessage();
-    }
-});
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
