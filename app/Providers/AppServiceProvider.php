@@ -20,7 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Vite::useBuildPath('build');
-        Vite::usePublicPath('/dashboard/portfolio/public');
+        //
     }
 }
