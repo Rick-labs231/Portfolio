@@ -80,7 +80,7 @@
 
             {{-- Right side: Photo --}}
             <div class="flex justify-end">
-                <img src="{{ route('assets.Photoricknova.jpg') }}" alt="Ricknova - Odinga Eric"
+                <img src="/dashboard/portfolio/public/assets/Photoricknova.jpg" alt="Ricknova - Odinga Eric"
                     class="w-full max-w-xs h-80 rounded-lg object-cover shadow-lg">
             </div>
         </div>
