@@ -8,13 +8,13 @@
         content="Ricknova - Crafting digital experiences that shine. Building the digital version of you...">
     <meta name="keywords" content="Ricknova, Web Developer, Python, Laravel, Full-Stack Development">
     <title>@yield('title', 'Ricknova') - Building the digital version of you…</title>
-    <link rel="icon" type="image/jpeg" href="/dashboard/portfolio/public/assets/logo.jpg">
+    <link rel="icon" type="image/jpeg" href="{{ asset('assets/logo.jpg') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-white text-gray-900 font-sans relative" style="background-color: #ffffff;">
     <div
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/dashboard/portfolio/public/assets/logo.jpg'); background-repeat: repeat; background-size: 300px 300px; background-attachment: fixed; opacity: 0.25; pointer-events: none; z-index: 0;">
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ asset("assets/logo.jpg") }}'); background-repeat: repeat; background-size: 300px 300px; background-attachment: fixed; opacity: 0.25; pointer-events: none; z-index: 0;">
     </div>
     <div style="position: relative; z-index: 1;">
 
@@ -22,9 +22,8 @@
         <header class="sticky top-0 z-50 bg-linear-to-r from-electric to-neonpurple text-white shadow-lg">
             <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <a href="/dashboard/portfolio/public/assets/logo.jpg" target="_blank"
-                        class="hover:opacity-90 transition">
-                        <img src="/dashboard/portfolio/public/assets/logo.jpg" alt="Ricknova Logo"
+                    <a href="{{ asset('assets/logo.jpg') }}" target="_blank" class="hover:opacity-90 transition">
+                        <img src="{{ asset('assets/logo.jpg') }}" alt="Ricknova Logo"
                             class="w-12 h-12 rounded-md object-cover">
                     </a>
                     <a href="/" class="hover:opacity-90 transition">
